@@ -53,7 +53,6 @@ public class BaseCucumberTest extends BaseSelenium {
     public void i_navigate_to_page(String pageName) {
         switch (pageName) {
             case "homepage" -> gotoPage(HOME_PAGE);
-            case "new-homepage" -> gotoPage(HOME_PAGE + "/page/index");
             default -> gotoPage(pageName.startsWith("/") ? HOME_PAGE + pageName : pageName);
         }
     }
@@ -66,32 +65,6 @@ public class BaseCucumberTest extends BaseSelenium {
     public void displayedPage(String pageName) {
         String url = switch (pageName) {
             case "home" -> HOME_PAGE;
-            case "new-homepage" -> HOME_PAGE + "/static/event/theme2/index.html";
-            case "event-detail" -> HOME_PAGE + "/event";
-            case "manage-event" -> HOME_PAGE + "/page/manage-event";
-            case "my-groups" -> HOME_PAGE + "/page/manage-groups";
-            case "create-event" -> HOME_PAGE + "/page/create-event";
-            case "my-events" -> HOME_PAGE + "/page/manage-events";
-            case "about-us" -> HOME_PAGE + "/page/about-us";
-            case "blog" -> HOME_PAGE + "/page/blog";
-            case "contact-us" -> HOME_PAGE + "/page/contact-us";
-            case "settings" -> HOME_PAGE + "/page/settings";
-            case "rsvp" -> HOME_PAGE + "/event/rsvp";
-            case "cart" -> HOME_PAGE + "/event/cart";
-            case "change-password" -> HOME_PAGE + "/page/change-password";
-            case "my-tickets" -> HOME_PAGE + "/page/my-tickets";
-            case "privacy-policy" -> HOME_PAGE + "/page/privacy";
-            case "my-new-profile" -> HOME_PAGE + "/page/my-profile";
-            case "ca-consumer-policy" -> HOME_PAGE + "/page/ca-privacy";
-            case "terms-of-service" -> HOME_PAGE + "/page/terms";
-            case "cookie-policy" -> HOME_PAGE + "/page/cookie-policy";
-            case "feedback" -> HOME_PAGE + "/page/feedback";
-            case "facebook" -> "https://www.facebook.com/funzippyevents";
-            case "twitter" -> "https://twitter.com/eventsfunzippy";
-            case "instagram" -> "https://www.instagram.com/stories/funzippyevents/";
-            case "pintrest" -> "https://www.pinterest.com/funzippyevents/";
-            case "linkedin" -> "https://www.linkedin.com/in/funzippy-events-nearyou";
-            case "my-profile" -> HOME_PAGE + "/user/profile/edit";
             default -> HOME_PAGE + pageName;
         };
         validateUrlStartWith(url);
