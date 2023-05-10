@@ -16,9 +16,9 @@ Start writing features at test/resources/
 Available clause syntax. Open for other improvements.
 
 * Link
- * I click {string} link
- * I click link containing {string}
- * I click {string} link id
+  * I click {string} link
+  * I click link containing {string}
+  * I click {string} link id
 
 * Button
  * I click {string} button id
