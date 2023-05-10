@@ -15,81 +15,81 @@ Start writing features at test/resources/
 
 Available clause syntax. Open for other improvements.
 
---Link
-I click {string} link
-I click link containing {string}
-I click {string} link id
+* Link
+** I click {string} link
+** I click link containing {string}
+** I click {string} link id
 
---Button
-I click {string} button id
-I click {string} button name
-I click {string} {int} button name
-I click {string} button
-I click {string} button in {string} div
-I see {string} button text {string}
+* Button
+** I click {string} button id
+** I click {string} button name
+** I click {string} {int} button name
+** I click {string} button
+** I click {string} button in {string} div
+** I see {string} button text {string}
 
---Checkbox
- I click {string} checkbox id
+* Checkbox
+**  I click {string} checkbox id
  
---Div
-I see div {string} display message {string}
-I see div {string} contains text {string}
-I see {string} div id show
+* Div
+** I see div {string} display message {string}
+** I see div {string} contains text {string}
+** I see {string} div id show
 
---Radio
-I click {string} radio
-I click {string} radio id
+* Radio
+** I click {string} radio
+** I click {string} radio id
 
---Select
-I see select box with id {string}
-I see dropdown with label {string}
-I select {string} into {string} dropdown id
-I select {string} into {string} dropdown
-I select {string} into {string} multiselect dropdown
+* Select
+** I see select box with id {string}
+** I see dropdown with label {string}
+** I select {string} into {string} dropdown id
+** I select {string} into {string} dropdown
+** I select {string} into {string} multiselect dropdown
 
---Span
-I click {string} span containing text
+* Span
+** I click {string} span containing text
 
---Textarea
-I enter {string} in textarea {string}
+* Textarea
+** I enter {string} in textarea {string}
 
---textbox
-I see input box with label {string}
-I see input box with id {string}
-I see input box with name {string}
-I enter {string} into {string}" )
-I enter {string} into {string} in {string}" )
-I enter {string} into {string} text id" )
-I enter {string} in textbox named {string}
-I see {string} in {string} text id placeholder
-I see input box {string} value {string}
-I see input box {string} value {string} in {string}
-I see input box id {string} value {string}
-I see input box {string} value contains {string}
+* textbox
+** I see input box with label {string}
+** I see input box with id {string}
+** I see input box with name {string}
+** I enter {string} into {string}" )
+** I enter {string} into {string} in {string}" )
+** I enter {string} into {string} text id" )
+** I enter {string} in textbox named {string}
+** I see {string} in {string} text id placeholder
+** I see input box {string} value {string}
+** I see input box {string} value {string} in {string}
+** I see input box id {string} value {string}
+** I see input box {string} value contains {string}
 
---Typeahead
-I select option {int} in type ahead into {string} 
+* Typeahead
+** I select option {int} in type ahead into {string} 
 
---General
-    I see message {string} in div {string}
-    I see {string} page
-    I see external page {string}
-    I see div list with name {string}
-    I sleep {int} seconds
-    I switch to modal {string}
-    I read {string} in tag {string}
-    I read text contains {string} in tag {string}
-    I read text contains {string} in tag {string} index {int}
-    I wait for modal class {string} close
+* General
+ **    I see message {string} in div {string}
+ **    I see {string} page
+ **    I see external page {string}
+ **    I see div list with name {string}
+ **    I sleep {int} seconds
+ **    I switch to modal {string}
+ **    I read {string} in tag {string}
+ **    I read text contains {string} in tag {string}
+ **    I read text contains {string} in tag {string} index {int}
+ **    I wait for modal class {string} close
 
 
-    @Given("I scroll to bottom")
-    @Given("I scroll to top")
-    @Given("I scroll to element id {string}")
-    @Given("I scroll to element name {string} {int}")
-    @Given("I scroll to element tag {string}")
-    @Given("As {string} user")
-    @When("I navigate to {string}")
-    @When("I click on first {string}")
+ **    @Given("I scroll to bottom")
+ **    @Given("I scroll to top")
+ **    @Given("I scroll to element id {string}")
+ **    @Given("I scroll to element name {string} {int}")
+ **    @Given("I scroll to element tag {string}")
+ **    @Given("As {string} user")
+ **    @When("I navigate to {string}")
+ **    @When("I click on first {string}")
     
 
