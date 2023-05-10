@@ -5,10 +5,10 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {"src/test/resources/com/event/cucumber/features/pages/"},
+@CucumberOptions(features = {"src/test/resources/"},
         tags = "@Regression",
         plugin = {"pretty", "json:target/report.json", "html:target/selenium.html"},
-        glue = {"com.techsavy.selenium"})
+        glue = {"autopilot"})
 public class KickoffTests {
 
 }
