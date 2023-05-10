@@ -8,3 +8,6 @@ Advantage of using this framework is write feature file and tester is done with.
 Also the feature steps simulates exactly how a user enters values in browser. Easy to undestand, easy to write, easy to modify tests in case of changes on web page.
 
 AutoPilot is a powerful and user-friendly automated testing framework that is designed to make it easy for automation testers and product owners to create and run tests without needing to write Java code. With AutoPilot, you can improve the efficiency and quality of your testing processes, while reducing the time and resources required to create and maintain automated tests.
+
+
+Start writing features at test/resources/
